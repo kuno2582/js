@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+
+.input_field {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#sp1 {
+	float:left;
+	margin-left: 90px;
+}
+
+#sp2 {
+	margin-left: 150px;
+}
+
+#demo,#file {
+	margin: 10px;
+	border: 2px solid gray;
+}
+
+#field {
+	width: 90%;
+	height: 100px;
+	margin: 0 20px;
+}
+
+
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		var num=6;
+		var count=0;
+		
+		var name,address1,address2,latitude,longitude;
+		var str="";
+		$('#submit').click(function(){
+			make();
+			str = "";
+			resetdata();
+		});
+		
+		$('#reset').click(function(){
+			reset();
+		});
+		
+		$('#resetResult').click(function(){
+			resetResult();
+		});
+		
+		function reset(){
+			$('input').each(function(index, item){
+				$(item).val("");
+			});
+		}
+		
+		function resetdata(){
+			$('.data').each(function(index, item){
+				$(item).val("");
+			});
+		}
+		
+		function resetResult(){
+			$('#field').val("");
+		}
+		
+		function make(){
+			var count_input=0;
+			
+			var i=0;
+			$('.name').each( function(index, item){
+				if($(item).val()!=""){
+					count_input++;
+				}
+			});
+			
+			if(count_input == 0)
+				return;
+			//alert(count_input);
+			var arrName = $('.name');
+			var arrData = $('.data');
+			
+			if($('#field').val()){
+				str += $('#field').val();
+				str += ',';
+			}
+			
+			str += "{";
+			$('.name').each( function(index, item){
+				if($(item).val()!=""){
+					
+					str += '"' + $(item).val() + '":"' + $(arrData[index]).val() + '"';
+					
+					if(i<count_input-1){
+						str += ",";
+						i++;
+					}
+				}
+			});
+			str += '}';
+
+			$('#field').val(str);
+			count++;
+		}
+		
+		$('#add').click(function(){
+			$('#in_field').append('<span>'+num+'번 </span><input type="text" class="name"> : <input type="text" class="data"><br>');
+			num++;
+		});
+		
+	});
+</script>
+</head>
+<body>
+
+	<div style="border:1px solid gray;margin:0 auto;width:90%;">
+		<fieldset name="input" class="input_field" id="in_field">
+		<legend><b>JSON 작성</b></legend>
+			<span id="sp1">속성</span><span id="sp2">값</span><br>
+			<span>1번 </span><input type="text" class="name"> : <input type="text" class="data"><br>
+			<span>2번 </span><input type="text" class="name"> : <input type="text" class="data"><br>
+			<span>3번 </span><input type="text" class="name"> : <input type="text" class="data"><br>
+			<span>4번 </span><input type="text" class="name"> : <input type="text" class="data"><br>
+			<span>5번 </span><input type="text" class="name"> : <input type="text" class="data"><br>
+		</fieldset>
+		<br>
+		<fieldset name="input" class="input_field">
+			<button type="button" id="submit">INPUT</button>
+			<button type="button" id="reset">RESET</button>
+			<button type="button" id="add">ADD</button>
+		</fieldset>
+		
+		<p style="margin-left:20px"><b>JSON 결과</b><p>
+		<textarea id="field"></textarea><br>
+		<button type="button" id="resetResult" style="margin-left:20px">RESET</button>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('#cbc').click(function(){
+			var a = $('input[name=aabb]').attr("value");
+			alert(a);
+			});
+		});	
+	});
+
+</script>
+<style type="text/css">
+div {
+	width: 200px;
+	height: 100px;
+	border: 1px solid black;
+	display: inline-block;
+	margin: 0 1px;
+}
+
+.box {
+	background: pink;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+ <div class='box'>
+   <form>
+    <input name="aabb" type="text" value="1">
+   </form>
+ </div>
+ 
+ <div class='box'>
+   <form>
+    <input name="aabc" type="text" value="1">
+   </form>
+ </div>
+ 
+ <div class='box'>
+   <form>
+    <input name="aabd" type="text" value="2">
+   </form>
+ </div>
+ 
+ <div class='box'>
+   <form>
+    <input name="aaeb" type="text" value="2">
+   </form>
+ </div>
+ 
+ <div class='box'>
+   <form>
+    <input name="ccdd" type="text" value="1">
+   </form>
+ </div>
+ 
+ <a href="#" id="cbc">여기 클릭!</a>
+
+</body>
+</html>

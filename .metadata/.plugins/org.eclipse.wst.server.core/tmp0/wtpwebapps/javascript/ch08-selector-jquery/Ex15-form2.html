@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+
+요소:checked		체크된 입력양식
+요소:disable		비활성화된 입력양식
+요소:enable		활성화된 입력양식
+요소:focus		초점이 맞춰져 있는 입력양식
+요소:selected		select택에서 option요소중 선택된 요소
+
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		setTimeout(function(){
+			var value = $('select > option:selected').val();
+			alert(value);
+		},4000);
+	});
+
+</script>
+</head>
+<body>
+
+	<select>
+		<option>Apple</option>
+		<option>Pineapple</option>
+		<option>Melon</option>
+		<option>Orange</option>
+		<option>Cherry</option>
+		<option>Tomato</option>
+		<option>Banana</option>
+	</select>
+
+</body>
+</html>

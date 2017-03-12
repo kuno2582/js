@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+자바스크립트 사용방법
+ - <script>와 </script> 태그 사이에 삽입
+ - <script>태그에 type속성에 language설정을 할 수 있지만
+  생략하면 자동으로 자바 스크립트로 인식하므로 생략도 가능합니다.
+
+ -->
+<script>
+	//Date() : 생성자, 날짜와 시간을 표시하는 객체를 반환해 주게 됩니다.
+	var date = new Date();
+	
+	//24 시간 형태로 시간을 반환
+	var hour = date.getHours();
+	
+	if(hour<20){
+		alert("Happy Day!!!");
+	}else{
+		alert("Good Night! Sweet Dream!!!");
+	}
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

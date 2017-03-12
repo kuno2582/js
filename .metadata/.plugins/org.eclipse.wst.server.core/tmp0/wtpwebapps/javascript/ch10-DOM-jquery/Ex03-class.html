@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+
+Class 속성 메소드
+.addClass()		선택된 요소에 class속성을 추가
+.removeClass()	선택된 요소에 class속성을 제거
+.hasClass()		선택된 요소에 해당 class속성을 가졌는지 확인
+.toggleClass()	선택된 요소에 class속성을 토글
+
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+	<div id="mydiv" class="foo bar"></div>
+
+	<script type="text/javascript">
+		$(function(){
+			alert($('#mydiv').hasClass('foo'));
+		});
+	</script>
+
+</body>
+</html>

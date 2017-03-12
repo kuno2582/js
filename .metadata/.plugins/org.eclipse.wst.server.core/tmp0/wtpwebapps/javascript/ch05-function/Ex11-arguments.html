@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+가변 인자 함수
+ - 함수에서 입력할 수 있는 매개변수 개수가 변하는 함수
+ - 가변인자함수는 매개변수의 개수가 변할수 있고, 정의된 것과 달리
+ 	입력된 매개변수 모두 활용할 수 있게 해주는 함수
+ - 모든 함수는 따로 선언은 하지 않았지만 매개변수를 저장하기 위한 
+ 	arguments배열을 이용해서 저장합니다.
+ 	
+arguments
+ 함수에서 입력받은 매개변수 저장하는 역할하는 배열
+ -->
+<script type="text/javascript">
+
+	function addNumber(){
+		var result = '';
+		var sum = 0;
+		
+		alert( typeof(arguments) );
+		alert( arguments.length );
+		
+		for(var i=0;i<arguments.length;i++){
+			sum += arguments[i];
+			result += arguments[i] + '&nbsp';
+			document.write('result : ' + result+'&nbsp');
+			document.write(' sum = '+sum+'<br>');
+		}
+	}
+	
+	addNumber(1,3,5,7,9);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+}
+
+#canvas_con {
+	border: 1px solid gray;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+canvas {
+	display: inline;
+    border: 2px solid black;
+    align: middle;
+}
+
+button {
+	width: 100px;
+	height: 80px;
+	font-size: 12pt;
+}

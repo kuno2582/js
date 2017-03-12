@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	var stringVar = 'String';
+	var stringChar = 'a';
+	var singleQuoteStr = 'single quote string';
+	var doubleQuoteStr = "double qquote string";
+	
+	document.write('stringVar: ' + typeof stringVar + '<br>');
+	document.write('stringChar: ' + typeof stringChar + '<br>');
+	document.write('singleQuoteStr: ' + typeof singleQuoteStr + '<br>');
+	document.write('doubleQuoteStr: ' + typeof doubleQuoteStr+ '<br>');
+	
+	var str="java";
+	document.write(str[0] + str[1] + str[2] + str[3] + '<br>');
+	
+	//한 번 생성된 문자열은 읽기만 가능하고 수정은 불가능합니다.
+	str[0] ='J';
+	document.write(str);
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

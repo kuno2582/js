@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+클래스 선택자
+ - HTML 페이지 안의 특정 class명을 가진 요소를 선택하는 선택자
+ - 마침표(.) 다음에 클래스명을 적어서 특정 태그 요소 전체를 선택
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('.impossible.possible').css('color','red');
+	});
+
+</script>
+</head>
+<body>
+
+	<h3 class="impossible">희망은 늘 두려움과 함께 온다.</h3>
+	<h3 class="impossible possible">그래서 희망을 향해 창을 열때는</h3>
+	<h4 class="impossible">각오가 필요하다.</h4>
+
+</body>
+</html>

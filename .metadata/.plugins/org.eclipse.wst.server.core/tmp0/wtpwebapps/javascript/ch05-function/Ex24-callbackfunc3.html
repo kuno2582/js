@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function check(message) {
+		
+		var i = 1;
+		var sum = 0;
+		
+		while(1){
+			document.write('모집된 인원: ' + sum + '<br>');
+			
+			sum += i;
+			
+			if(sum > 10){
+				message();
+				break;
+			}
+		}
+		
+	}
+	
+	check( function (){
+		document.write('모집정원을 초과하였습니다.');
+	});
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

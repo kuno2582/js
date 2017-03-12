@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+
+isFinite(number)
+ - number가 숫자인지 무한한값(Infinity)인지 확인해주는 함수
+ 
+false	양수를 0으로 나눈 무한대, 음수를 0으로 나눈 무한대
+		숫자지만 나타낼 수 없는 수(NaN)
+
+true	그 외 나머지 전부
+
+ -->
+<script type="text/javascript">
+
+//숫자로 나타낼 수 있는 경우 -> true
+document.write(isFinite(123)); document.write('<br>');
+document.write(isFinite(-123)); document.write('<br>');
+document.write(isFinite(1.23)); document.write('<br>');
+document.write(isFinite(-1.23)); document.write('<br>');
+document.write(isFinite(0)); document.write('<br>');
+
+//숫자로 나타낼 수 없는 경우 -> false
+document.write(isFinite(123/0)); document.write('<br>');
+document.write(isFinite(-123/0)); document.write('<br>');
+document.write(isFinite('codedragon')); document.write('<br>');
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

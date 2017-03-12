@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function callFunctionTenTimes(otherFunction){
+		for(var i=0; i<10; i++){
+			otherFunction();
+		}
+	}
+	
+	callFunctionTenTimes( function(){
+		document.write("Hello Javascript world!<br>");
+	} );
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

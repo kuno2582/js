@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MOUM - My Web Page</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <div id="nav_top"></div>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Moum</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#find-map">Find</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">My Page</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#"><b>로그인</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#"><b>회원가입</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">MOUM</h1>
+                        <p class="intro-text">Resist your firm, And Find other firm by FREE.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Moum</h2>
+                <p>Moum은 여러 회사의 정보들을 모아 제공해주는 웹사이트 입니다.</p>
+                <p>Moum에서는 당신의 회사를 등록할 수도 있고, <br>다른회사들과 관계를 맺을 수도 있습니다.</p>
+                <p>Moum을 통한 여러분의 회사 번창을 기원합니다.</p>
+            </div>
+        </div>
+    </section>
+
+	<!-- MY SECTION -->
+	<section class="content-section" id="map-content">
+		<div id="find-map">
+			<fieldset>
+				<legend>
+					<b>지역 선택</b>
+				</legend>
+				<div><input type="checkbox" name="chk_region" value="All"><span class="chk_region">전체</span></div>
+				<div><input type="checkbox" name="chk_region" value="seoul"><span class="chk_region">서울</span></div>
+				<div><input type="checkbox" name="chk_region" value="gyeonggi"><span class="chk_region">경기</span></div>
+				<div><input type="checkbox" name="chk_region" value="gangwon"><span class="chk_region">강원</span></div>
+				<div><input type="checkbox" name="chk_region" value="chungcheong"><span class="chk_region">충청</span></div>
+				<div><input type="checkbox" name="chk_region" value="jeolla"><span class="chk_region">전라</span></div>
+				<div><input type="checkbox" name="chk_region" value="gyeongsang"><span class="chk_region">경상</span></div>
+				<div><input type="checkbox" name="chk_region" value="jeju"><span class="chk_region">제주</span></div>
+			</fieldset>
+			
+		</div>
+		<div id="navi1">
+			<div id="choice_con">
+				<span><b>업종 1 : </b></span>
+				<select name="choice1">
+				 	<option value="all" selected="selected">전체</option>
+				 	<option value="인턴">인턴</option>
+				 	<option value="신입">신입</option>
+				 	<option value="대리">대리</option>
+				 	<option value="과장">과장</option>
+				 	<option value="차장">차장</option>
+				 	<option value="부장">부장</option>
+				 	<option value="임원">임원</option>
+				 	<option value="사장">사장</option>
+				 	<option value="기타">기타</option>
+	 			</select><br>
+	 			<span><b>업종 2 : </b></span>
+				<select name="choice2">
+				 	<option value="all" selected="selected">전체</option>
+				 	<option value="인턴">인턴</option>
+				 	<option value="신입">신입</option>
+				 	<option value="대리">대리</option>
+				 	<option value="과장">과장</option>
+				 	<option value="차장">차장</option>
+				 	<option value="부장">부장</option>
+				 	<option value="임원">임원</option>
+				 	<option value="사장">사장</option>
+				 	<option value="기타">기타</option>
+	 			</select>
+ 			</div>
+		</div>
+		<div id="map2"></div>
+		<div id="navi2">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</section>
+
+    <!-- Relation Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>MY RELATION</h2>
+                    <p>You can relate with another business partner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Moum</h2>
+                <p>Feel free to email us to provide some feedback on our Service, give us suggestions for new firm and information, or to just say hello!</p>
+                <p><a href="mailto:jhgs2kyh@naver.com">jhgs2kyh@naver.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="#" class="btn btn-default btn-lg"> <span class="network-name">A</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-default btn-lg"> <span class="network-name">B</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-default btn-lg"> <span class="network-name">C</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--  Map Section 
+    <div id="map"></div>
+ -->
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Your Website 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    
+    <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=9978627f24a383749e985ea4d7323101"></script>
+	
+	<script type="text/javascript">
+	
+		window.onload = function(){
+
+			//다음지도 js
+			var name = [];
+			var latitude = [];
+			var longitude = [];
+			var request;
+			
+			if (window.XMLHttpRequest){
+				request = new XMLHttpRequest;
+			} else {
+				request = new ActiveXObject('microsoft.XMLHTTP');
+			}
+			
+			//Ajax 요청
+			request.open("GET","data.xml");
+			request.send();
+			
+			request.onreadystatechange = function(){
+				settingMap();
+			}
+			
+			function settingMap(){
+					if (request.readyState == 4) {
+					
+					if(request.status >=200 && request.status < 300) {
+						
+						var mapContainer = document.getElementById('map2'), // 지도를 표시할 div 
+					    mapOption = { 
+					        center: new daum.maps.LatLng(37.2179083, 126.80822), // 지도의 중심좌표
+					        level: 12 // 지도의 확대 레벨
+					    };
+					
+						var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+						
+						var xml = request.responseXML;
+						
+						var names = xml.getElementsByTagName("name");
+						var phones = xml.getElementsByTagName("phone");
+						var latitudes = xml.getElementsByTagName("latitude");
+						var longitudes = xml.getElementsByTagName("longitude");
+						
+						for (var i = 0; i < names.length; i++){
+							name[i] = names[i].childNodes[0].nodeValue;
+							latitude[i] = latitudes[i].childNodes[0].nodeValue;
+							longitude[i] = longitudes[i].childNodes[0].nodeValue;
+						}
+
+						// 마커가 표시될 위치입니다 
+						var markerPosition  = new daum.maps.LatLng(longitude[0], latitude[0]); 
+						
+						// 마커를 생성합니다
+						var marker = new daum.maps.Marker({
+						    position: markerPosition
+						});
+						
+						// 마커가 지도 위에 표시되도록 설정합니다
+						marker.setMap(map);
+						
+						// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+						// marker.setMap(null);    
+					}
+				}
+			}
+		}
+	
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- 
+다중 선택자
+ - 여러 개의 태그를 동시에 선택할 때 사용하는 선택자
+ - 콤마(,)로 구분해서 하나 이상의 태그를 나열해 주면됩니다.
+ -->
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('h1, p').css('color','red');
+	});
+
+</script>
+</head>
+<body>
+
+	<h1>봄</h1>
+	<p>여름</p>
+	<h1>가을</h1>
+	<div>겨울</div>
+
+</body>
+</html>

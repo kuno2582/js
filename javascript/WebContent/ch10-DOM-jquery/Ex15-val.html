@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+.val()
+ - 양식(form)에 입력디어 있는 value값들을 제어할 수 있는 함수
+ - 
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		function displayValues(){
+			var singleValues = $('#single').val();
+			var multipleValues = $('#multiple').val();
+			
+			$('p').html(
+				"<b>Single: </b>" + singleValues + 
+				" <b>Multiple: </b>" + multipleValues.join(',')	
+			);
+		}
+		
+		$('select').change(displayValues);
+		
+		displayValues();
+	});
+
+</script>
+<style type="text/css">
+
+p{
+	color: red;
+	margin: 4px;
+}
+
+b{
+	color: blue;
+}
+
+</style>
+</head>
+<body>
+	<select id="single">
+		<option>Single1</option>
+		<option>Single2</option>
+		<option>Single3</option>
+		<option>Single4</option>
+		<option>Single5</option>
+	</select>
+	
+	<select id="multiple" multiple='multiple'>
+		<option selected="selected">Multiple1</option>
+		<option>Multiple2</option>
+		<option selected="selected">Multiple3</option>
+		<option>Multiple4</option>
+		<option>Multiple5</option>
+	</select>
+	
+	<p></p>
+
+</body>
+</html>

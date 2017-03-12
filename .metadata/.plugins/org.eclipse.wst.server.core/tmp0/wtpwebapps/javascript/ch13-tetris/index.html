@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Tetris</title>
+<link rel='stylesheet' href='style.css' type="text/css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
+	<div id="canvas_con">
+		<canvas width='300' height='600'></canvas><br>
+		
+		<button id="up"><b>SPEED <br>UP</b></button>
+		<button id="down"><b>SPEED DOWN</b></button><br>
+		<span>현재 스피드 : </span><span id="speed"></span>
+		
+	</div>
+	
+	<script src='js/tetris.js'></script>
+	<script src='js/controller.js'></script>
+	<script src='js/render.js'></script>
+	
+	
+</body>
+</html>

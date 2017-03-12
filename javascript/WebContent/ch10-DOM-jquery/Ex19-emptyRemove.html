@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+.empty()	지정한 요소의 하위 요소만 제거
+.remove()	지정한 요소를 포함해서 하위요소 모두 제거
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		//$('p').remove();
+		$('div').empty();
+	});
+
+</script>
+</head>
+<body>
+
+	<div>
+		<h1>Header-0</h1>
+		<h1>Header-1</h1>
+	</div>
+	<p>
+		P tag
+		<span>Content-0</span>
+		<span>Content-1</span>
+	</p>
+
+</body>
+</html>

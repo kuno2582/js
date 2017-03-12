@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		var color = ['red', 'orange', 'hotpink', 'skyblue'];
+		var background = ['yellow', 'purple', 'green', 'brown'];
+		
+		$('h1').css( {
+			color:function(index){
+				return color[index];
+			},
+			background:function(index){
+				return background[index];
+			}
+		} );
+	});
+
+</script>
+</head>
+<body>
+
+	<h1>Header-0</h1>
+	<h1>Header-1</h1>
+	<h1>Header-2</h1>
+	<h1>Header-3</h1>
+	
+</body>
+</html>

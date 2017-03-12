@@ -1,0 +1,2 @@
+127.0.0.1 - - [03/Jan/2017:16:56:17 +0900] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [03/Jan/2017:16:56:18 +0900] "GET /javascript/ch08-selector-jquery/Ex13-attr.html HTTP/1.1" 200 1558

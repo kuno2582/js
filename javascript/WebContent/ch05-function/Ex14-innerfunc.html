@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+내부 함수
+ - 동일한 함수명 사용으로 인한 문제를 방지하기 위해 내부함수를 사용할 수 있습니다.
+ - 함수 내부에 선언한 함수
+ - 내부함수를 사용하면 외부에 이름이 같은 함수가 있어도 내부함수가 우선적으로
+ 	호출이 됩니다.
+ - 하나의 외부함수에 여러 개의 내부함수가 있을 수 있습니다.
+ - 부모함수 코드에서 외부에서의 간섭없이 수행할 수 있도록 해줍니다.
+ - 내부함수에서는 자신을 감싸고 있는 외부함수의 변수에 접근할 수 있습니다.
+ - 내부함수는 일반적으로 자신이 정의되어 있는 외부함수 내에서 호출이되어집니다.
+ 
+내부 함수(Inner function) 형식
+function 외부함수(){
+	function 내부함수1(){
+		수행할 코드;
+	}
+	function 내부함수2(){
+		수행할 코드;
+	}
+	내부함수1();
+}
+ -->
+<script type="text/javascript">
+
+//대리
+function circleSquare(r){
+	
+	function square(n){
+		return n*n;
+	}
+	
+	return 3.14 * square(r);
+	
+	
+}
+
+document.write(circleSquare(7));
+
+
+//과장 : 직각삼각형 여부 판단 기능
+function square(width, height, hypotenuse){
+	if(width*width+height == hypotenuse * hypotenuse){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+암시적 형변환(자동형변환)
+ - 명령어를 수행하는 과정 중에 자바스크립트 엔진이 자동으로 변환해주는 것
+
+result = "10" + 20;	//문자 + 숫자 -> 문자로 형변환
+result = 10 + "20"; //숫자 + 문자 -> 문자로 형변환
+result = "10" + true //문자 + 불린 -> 불린으로 형변환
+
+자동형변환시 + 연산자
+- 문자열이 숫자보다 우선 (문자열 > 숫자)
+- 더하기를 제외한 그밖의 사칙연산자는 숫자가 문자열보다 우선됩니다.(문자열<숫자) 
+ -->
+<script type="text/javascript">
+	document.write(123 + 456); document.write('<br>');
+	document.write('123' + 456); document.write('<br>');  
+	document.write(123 + '456'); document.write('<br>');  
+	
+	document.write(16/2); document.write('<br>');
+	document.write('16'/2); document.write('<br>');  
+	document.write(16*'2'); document.write('<br>');
+	document.write('16' - '2'); document.write('<br>');
+	
+
+
+</script> 
+ 
+</head>
+<body>
+
+</body>
+</html>

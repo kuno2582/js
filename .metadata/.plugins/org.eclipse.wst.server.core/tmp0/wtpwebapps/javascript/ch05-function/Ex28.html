@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+클로저 사용
+ - 함수 안에 있는 변수는 지역변수이므로 외부에서 사용할 수 없습니다.
+ - 클로저를 사용하면 이 규칙을 위반하여 지역변수를 사용할 수 있도록 할 수 있습니다.
+ - 익명함수를 반환하는 함수에 지역변수가 있으면 익명함수는 클로저함수로써
+ 	지역변수를 가져다가 쓸 수 있습니다.
+ 	
+지역변수 규칙 위배
+ - f() 종료하여 결과값이 반환되었는데 f()에 있는 지역변수 var n가 호출되어집니다.
+ 	
+ -->
+<script type="text/javascript">
+
+	function f(){
+		var n =100;
+		
+		function g(){
+			document.write('n: '
+					+ n + '<br>');
+			document.write('g() is called<br>');
+		}
+		
+		//함수 반환
+		return g;
+	}
+	
+	var result = f();
+	
+	document.write(result + '<br>');
+	
+	//내부함수 실행
+	result();
+	//클로저: 내부함수 사용시 지역변수를 남겨두는 것
+	//내부함수를 만들고 내부함수를 감싸고 있는 함수의 지역변수를
+	//내부함수에서 사용할 때 내부함수를 감싸고 있는 외부함수가 종료되었더라도
+	//내부함수에서 지역변수를 호출할 수 있도록 지역변수를 남겨두는 현상
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

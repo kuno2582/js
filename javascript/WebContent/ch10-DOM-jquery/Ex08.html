@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('img').attr({
+			width:function(index){
+				return (index+1)*100;
+			},
+			height:function(index){
+				return (index+1)*100
+			}
+		});
+	});
+
+</script>
+</head>
+<body>
+	<img src="../img/img1.jpg">
+	<img src="../img/img2.jpg">
+	<img src="../img/img3.jpg">
+</body>
+</html>

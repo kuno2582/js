@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+jQuery 기본 형태
+ - jQuery 이름에서 알수 있듯이 질의와 밀접한 관련이 있는 언어,
+ 	질의는 선택자를 통해 이루어지게 됩니다.
+ - 선택자를 이용해서 조작하거나 선택하길 원하는 경로를 지정하면
+ 	자바스크립트 엔진은 문서 객체의 요소를 가져오게 됩니다.
+ 	
+jQuery 선택자 유형
+ - jQuery 선택자는 이미 널리 쓰이고 있는 CSS 선택자와 유사합니다.
+ - 기본 선택자 유형으로는 전체선택자, 태그선택자, 클래스선택자, 아이디선택자가 있습니다.
+ 
+전체선택자
+ - HTML 페이징 있는 문서 객체(태그 요소)를 선택하는 선택자
+ - 모든 요소를 선택하는 선택자
+ - * (애스터리스크) 표시
+ - 선택자는 문자열로 취급되기 때문에 ''(작은따옴표) 또는 ""(큰따옴표)로 감싸주어야 합니다.
+ 
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		//css(속성명,속성값);
+		$('*').css('color','blue');
+	});
+
+</script>
+</head>
+<body>
+
+	<h1>계절</h1>
+	<p>계절</p>
+
+</body>
+</html>

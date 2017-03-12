@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!--
+문서 객체 추가 메소드
+$(A).appendTo(B)		A를 B의 기존 자식의 뒤에 추가
+$(A).prepend(B)			A를 B의 기존 자식의 앞에 추가			
+$(A).insertAfter(B)		A를 B의 뒤에 추가
+$(A).insertBefore(B)	A를 B의 앞에 추가
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$( function(){
+// 		$('<h1>Find Thank you</h1>').appendTo('div');
+
+		$('<h1>Find Thank you</h1>').prependTo('div');
+	} );
+
+</script>
+</head>
+<body>
+	<div>
+		<h1>How do you do?</h1>
+	</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	var number1 = 10/0;
+	document.write('number1 = ' + number1 + '<br>');
+	
+	if(isFinite(number1)){
+		document.write('유한<br>');
+	}else{
+		document.write('무한<br>');
+	}
+	
+	var number2 = 10/'A';
+	document.write('number2 = ' + number2 + '<br>');
+	
+	
+	if (isNaN(number2)) { //숫자가 아닌 경우
+		document.write('숫자 아님<br>');
+	} else { //숫자인 경우
+		document.write('숫자 임<br>');
+	}
+	
+	if (number1 == Infinity) {
+		document.write('무한<br>');
+	} else {
+		document.write('유한<br>');
+	}
+	
+	var number3 = -10/0;
+	document.write('number3= ' + number3 + '<br>');
+	
+	if (number3 == -Infinity) {
+		document.write('무한<br>');
+	} else {
+		document.write('유한<br>');
+	}
+	
+	var x = -123/0 + 'A';
+	document.write('x= ' + x + '<br>');
+
+	//오류발생 isNaN으로 비교할 것!
+	if (number2 == NaN) {
+		document.write('숫자 아님<br>');
+	} else {
+		document.write('숫아 임<br>');
+	}
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

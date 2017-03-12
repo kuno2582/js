@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	//대리: 원의 넓이를 구하기
+	function square(n){
+		return n*n;
+	}
+
+	function circleSquare(r){
+		return 3.14*square(r);
+	}
+
+	document.write( circleSquare(7));
+	
+	//과장: 직각삼각형 여부 판단 기능
+	function square(width, height, hypotenuse){
+		if(width * width + height == hypotenuse){
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

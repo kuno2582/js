@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+명시적 형변환
+ - 개발자가 직접 지정해주는 방식
+ - 명령어를 사용해서 기본의 값을 원하는 유형으로 변환하는 것
+ 
+
+명시적 형변환 방법
+ - 숫자를 문자로 변환하는 경우 
+ 	string()을 이용하는 방법
+ 	toString()을 이용하는 방법
+ - 문자를 숫자로 변환하는 경우
+ 	Number()을 이용하는 방법
+ 	parseInt()을 이용하는 방법
+ 	parseFloat()을 이용하는 방법
+ -->
+<script type="text/javascript">
+	var v1 = false;
+	var v2 = '1000';
+	var v3 = "String";
+	
+	//Math.sqrt()는 루트를 표현하는 함수
+	//괄호안에 음수인 마이너스값을 입력하면 복소수가 됩니다.
+	//자바스크립트에서는 복소수 표현할 수 없습니다.
+	var v4 = Math.sqrt(-7);
+	var v5 = Math.sqrt(7);
+	
+	document.write(v1 + '(' + Number(v1) + ')');
+	document.write('<br>');
+	
+	document.write( typeof(Number(v2)) + ':' + Number(v2) );
+	document.write('<br>');
+	
+	document.write(v3)
+ 	document.write('<br>');
+	document.write( Number(v3) ); //NaN
+	document.write('<br>'); 
+
+	document.write(v4);
+	document.write('<br>');
+	
+	document.write(v5);
+	document.write('<br>');
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

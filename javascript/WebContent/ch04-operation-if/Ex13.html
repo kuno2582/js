@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+for문
+크리스마스 트리
+공백(&nbsp)
+
+    *
+   ***
+  *****
+ *******
+*********
+
+
+ -->
+<script type="text/javascript">
+
+	var x,y,z;
+	
+	var dan = prompt('트리의 층수를 입력하세요','');
+	
+	
+	for(x=0;x<dan;x++){
+		for(y=dan-x-1;y>=1;y--){
+			document.write('&nbsp;');
+		}
+		for(z=0;z<2*x-1;z++){
+			document.write('*');
+		}
+		document.write('<br>');
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

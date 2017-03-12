@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		
+		mapnavi();
+		
+		$(window).resize(function(){
+			mapnavi();
+		});
+		
+		//네비게이션과 맵 div 조절함수
+		function mapnavi(){
+			var conwidth = $('#container').width();
+			var naviwidth = $('#navi').width();
+			$('#map').css({'width':conwidth-naviwidth-50});
+		}
+	});
+
+</script>
+<style type="text/css">
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	border: 1px solid gray;
+}
+
+div#header {
+	width: auto;
+	height: 100px;
+}
+
+#name {
+	display: inline-block;
+	font-family: Dancing script;
+	font-size: 62pt;
+	margin-left: 50px;
+}
+
+div#nav {
+	width: auto;
+	height: 50px;
+	padding-left: 20%;
+}
+
+.top_nav li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 20px;
+}
+
+.top_nav li a {
+	display: inline-block;
+	background: gray;
+	color: #fff;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	font-size: 25pt;
+	text-decoration: none;
+}
+
+div#container {
+	width: auto;
+	height: 550px;
+	overflow: hidden;
+}
+
+div#navi {
+	display:inline-block;
+	width: 300px;
+	height: 520px;
+	margin: 10px;
+	float: right;
+	overflow: auto;	
+}
+
+div#map {
+
+	width: 1000px;
+	height: 520px;
+	margin: 10px;
+	float: left;
+	overflow: hidden;
+}
+
+div#footer {
+	width: auto;
+	height: 70px;
+}
+
+</style>
+</head>
+<body>
+	
+	<div id="header">
+		<div id="name">MOUM</div>
+	</div>
+	
+	<div id="nav">
+		<ul class="top_nav">
+			<li><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+			<li><a href="#">d</a></li>
+			<li><a href="#">e</a></li>
+		</ul>
+	</div>
+	
+	<div id="container">
+		<div id="navi">
+		</div>
+		<div id="map">
+		fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+		fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+	
+		</div>
+	</div>
+	
+	<div id="footer">
+	
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+자료형(Data Type)
+ - 프로그래밍 언어로 조작할 수 있는 값(데이터)의 유형
+ - 자바스크립트는 코드상에 자료형을 표시하지 않지만
+ 	내부적으로 데이터를 인식할 때 자료형 사용합니다.
+ - 문자열, 숫자, 불린, 널, 언디파인드, 객체등 6개의 자료형
+
+자료형
+String		문자(열)
+Number		숫자 (정수형과 실수형)
+Boolean		논리
+			참(true)과 거짓(false)
+함수
+객체
+undefined	언디파인드
+			변수를 선언했지만 초기화를 하지 않은 경우
+null		널, 값없음
+
+
+숫자
+ - 정수/실수
+ - 자바스크립트에서는 하나의 숫자형만 존재
+ - 모든 숫자를 64비트 부동 소수점(실수) 형태로 저장
+
+자바스크립트 나눗셈 연산(주의)
+자바스크립트에서는 정수형이 없고 
+모든 수자를 실수로 처리하므로 주의하셔야 합니다.
+5/2		2	2.5
+
+정수형
+10진수, 16진수, 8진수의 3가지 형태 표시
+10진수	일반적인 숫자 형태
+16진수	0x를 숫자 앞에 붙여 0~9와 a~f까지의 문자 조합 표현
+8진수	0~7까지의 숫자만 사용
+
+ -->
+ 
+<script type="text/javascript">
+	document.write(567);
+	document.write('<br>');
+	
+	document.write(456.789);
+	document.write('<br>');
+	
+	var num = 5/2;
+	document.write(num); document.write('<br>'); //2.5
+	
+	//floor() 소수부분을 버린 정수부분만 사용할 수 있도록 반환해주는 함수
+	document.write(Math.floor(num)); document.write('<br>');
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

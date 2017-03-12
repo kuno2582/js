@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+.trigger()
+이벤트를 강제로 발생시키는 함수
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$( function(){
+		$('h1').click( function(){
+			$(this).html(function(index, html){
+				return html + '*';
+			});
+		} );
+		
+		setInterval(function(){
+			//이벤트 강제 발생
+			$('h1').trigger('click');
+		} , 1000);
+	} );
+
+</script>
+
+</head>
+<body>
+	<h1>Start: </h1>
+</body>
+</html>

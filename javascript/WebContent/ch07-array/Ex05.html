@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+배열 요소 가공
+ - 가변길이여서 인덱스를 줄이거나 인덱스를 늘일 수 있습니다.
+ - 길이 없는 인덱스의 데이터를 호출하면 데이터가 없기 때문에 undefined가
+ 	출력 됩니다.
+ -->
+<script type="text/javascript">
+
+	var array = ['사과','배','복숭아','수박','파인애플'];
+
+	document.write(array + '<br>');
+	array[5] = '포도';
+	document.write(array + '<br>');
+	
+	array[20] = '자몽';
+	document.write(array + '<br>');
+	
+	document.write(array[15] + '<br>');
+	
+	var array2 = ['one', 'two', 'three', 'four', 'five'];
+	document.write(array2.length + '<br>');
+	document.write(array2 + '<br>');
+	
+	array2.length = 3;
+	document.write(array2 + '<br>');
+	
+	array2.length = 6;
+	document.write(array2 + '<br>');
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

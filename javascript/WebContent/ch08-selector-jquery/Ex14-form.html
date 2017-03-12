@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+입력양식 필터 선택자
+요소:button		input태그 중 type속성이 button인 요소를 선택
+요소:checkbox		input태그 중 type속성이 checkbox인 요소를 선택
+요소:file			input태그 중 type속성이 file인 요소를 선택
+요소:image		input태그 중 type속성이 image인 요소를 선택
+요소:password		input태그 중 type속성이 password인 요소를 선택
+요소:radio		input태그 중 type속성이 radio인 요소를 선택
+요소:reset		input태그 중 type속성이 reset인 요소를 선택
+요소:submit		input태그 중 type속성이 submit인 요소를 선택
+요소:text			input태그 중 type속성이 text인 요소를 선택
+
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('input:text').css('background','red');
+		$('input:password').css('background','yellow');
+		$('input:button').val('SUBMIT');
+	});
+
+</script>
+</head>
+<body>
+
+	<input type="text">
+	<input type="password">
+	<input type="button">
+
+
+</body>
+</html>

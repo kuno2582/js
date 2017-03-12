@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+$(A).append(B)	B를 A의 기존 자식의 뒤에 추가
+$(A).prepend(B)	B를 A의 기존 자식의 앞에 추가
+$(A).before(B)	B를 A의 뒤에 추가
+$(A).after(B)	B를 A의 앞에 추가
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style type="text/css">
+
+.full {
+	border: 1px solid red;
+	
+}
+
+</style>
+</head>
+<body>
+
+	<ul>
+		<li>ul태그 안에 li태그를 가지고 있나요?</li>
+	</ul>
+
+	<script type="text/javascript">
+	
+		$('ul').append(
+			"<li>" + ($('ul').has('li') ? "YES":"NO") + "</li>"	
+		);
+		
+		$('ul').has('li').addClass('full');
+	
+	</script>
+
+</body>
+</html>

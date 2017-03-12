@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+비교 연산자
+===		양변(피연자)의 값과 자료형의 일치 여부
+!==		양변(피연자)의 값과 자료형의 불일치 여부
+
+==		동등
+		비교하려는 피연자의 타입이 다를 경우 타입변환을 한 후 비교수행
+		==연산자로 비교할 경우 타입변환이 자동으로 일어나기 때문에 
+		잘못된 연산 결과를 얻을 수 있으므로 주의를 해야 합니다.
+===		일치
+		비교하려는 피연자의 타입이 다를 경우 타입을 변경하지 않고 바로 비교 수행
+
+ -->
+<script type="text/javascript">
+
+	var a = 20, b='20', result;
+	
+	result = a == b;
+	document.write('a==b: ' + result + '<br>');
+	
+	result = a === b;
+	document.write('a===b:' + result + '<br>');
+
+	result = a != b;
+	document.write('a!=b: ' + result + '<br>');
+	
+	result = a !== b;
+	document.write('a!==b:' + result + '<br>');
+
+	result = 1=='1';
+	document.write('1==\'1\': ' + result + '<br>');
+	result = 1 ==='1';
+	document.write('1===\'1\': ' + result + '<br>');
+</script> 
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+클로저
+ - 내부함수 사용시 지역변수를 남겨두는 것
+ - 지역변수는 함수가 실행될 때 생성되고 함수가 종료될 때 사라지게 됩니다.
+ - 내부함수를 만들고 내부함수를 감싸고 있는 함수의 지역변수를 내부함수에서
+	호출할때 내부함수를 감싸고 있는 외부함수가 종료되더라도 내부함수가
+	지역변수를 호출할수 있도록 지역변수를 남겨두는 현상
+	
+클로저 특징
+ - 종료된 외부함수의 변수를 참조하는 함수
+ - 지역변수를 남겨두는 현상
+ - 함수 outerFunction()로 인해 생성된 공간
+ - 함수 outerFunction() 내부의 변수들이 살아있는 것(output)
+ - 리턴되는 함수 자체
+ - 함수가 종료된 이후에 살아남은 지역변수
+ 
+function outerFunction(name){
+	var output = 'Hello' + name;
+	
+	return function(){
+		alert(output);
+	};
+}
+ 
+ -->
+<script type="text/javascript">
+
+	function countNumber(){
+		var count = 0;
+		
+		var plus = function(){
+			return count += 1;
+		};
+		
+		return plus;
+	}
+	
+	var result = countNumber();
+	result();
+	
+	document.write(result() + '<br>');
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

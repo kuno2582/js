@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+NaN (Not a Number)
+ - 숫자가 아니라는 의미
+ - 수치 연산을 해서 정상적인 값을 얻지 못했을 때 출력되는 값 
+ - 자료형은 숫자지만, 자바스크립트로 나타낼 수 없는 숫자 
+ - 1 - 'codedragon' 연산한 결과값은 NaN
+ 
+isNaN(number)
+number가 NaN인지 확인해주는 함수
+ 
+ -->
+<script type="text/javascript">
+
+	//NaN이 아니면 -> false
+	document.write(isNaN(2016)); document.write('<br>');
+	document.write(isNaN(-2016)); document.write('<br>');
+	document.write(isNaN(20.16)); document.write('<br>');
+	document.write(isNaN(-20.16)); document.write('<br>');
+	document.write(isNaN(20-16)); document.write('<br>');
+	document.write(isNaN(16-20)); document.write('<br>');
+	document.write(isNaN(0)); document.write('<br>');
+	
+	//+무한대와 -무한대 역시 false를 출력합니다(주의).
+	document.write(isNaN(123/0)); document.write('<br>');
+	document.write(isNaN(-123/0)); document.write('<br>');
+	
+	//NaN이면 true
+	document.write(isNaN('codedragon')); document.write('<br>');
+	document.write(typeof(123)); document.write('<br>');
+	
+	//자바스크립트에서 typeof로는 NaN와 숫자를 구분할 수 없습니다.
+	document.write(typeof NaN == 'number'); document.write('<br>');
+
+	//자신과의 비교도 불가한 값 NaN입니다.
+	document.write(NaN == NaN); document.write('<br>');
+	
+	//숫자를 구별하는 방법
+	function isNumber(number){
+		return typeof number === 'number' && isFinite(number);
+	}
+
+	document.write(isNumber(1000));
+	document.write('<br>');
+	document.write(isNumber('1000'));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

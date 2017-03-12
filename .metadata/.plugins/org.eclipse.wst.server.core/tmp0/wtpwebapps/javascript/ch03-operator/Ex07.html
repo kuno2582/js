@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+논리연산자
+
+&&		논리곱 (and 연산)
+a && b	둘다 참일때 참
+
+||		논리합(or 연산)
+a || b	둘중 하나만 참이면 참
+
+!		논리부정(not 연산)
+!a		a가 참이면 거짓, 거짓이면 참으로 바꿔주는 연산자
+
+!!		피연자를 불린값으로 변환하는 연산자
+!!1		true
+
+a	b		a&&b	a||b	!a
+0	0		0		0		1
+0	1		0		1		1
+1	0		0		1		0
+1	1		1		1		0
+
+ -->
+<script type="text/javascript">
+	var a = true && false;
+	document.write('true && false: ' + a + '<br>');
+	
+	var b = true || false;
+	document.write('true || false: ' + b + '<br>');
+	
+	var c = !true;
+	document.write('!true: ' + c + '<br>');
+	
+	var a1=-10;
+	var result = !!a1;
+	document.write('!!a1:' + result + '<br>');
+
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

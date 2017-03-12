@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	window.onload = function(){
+		
+		var positions = [];
+		
+		var name = ['김윤호','이준원','임정환','권은서'];
+		var id = ['유노','주눤','화니','강냉이'];
+		
+		for(var i=0; i<name.length; i++){
+			positions[i] = {name1 : name[i],id1 : id[i]};
+		}
+		
+		/* for(var i=0; i<name.length; i++){
+			document.write(positions[i].name1+'\t'+positions[i].id1+'<br>');
+		} */
+		function adjust(){
+			var winwidth = $('div').width();
+			/* alert(winwidth); */
+			if(winwidth >1540){
+				$('#topMenu').css({'height':60});
+			}else if(winwidth >1236){
+				$('#topMenu').css({'height':120});
+			}else if(winwidth >930){
+				$('#topMenu').css({'height':120});
+			}else if(winwidth >633){
+				$('#topMenu').css({'height':180});
+			}else if(winwidth <633){
+				$('#topMenu').css({'height':300});
+			}
+		}
+		adjust();
+		$(window).resize(function(){
+			adjust();
+		});
+		
+	};
+	
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="nav.css">
+</head>
+<body>
+
+	<div>
+		<h1>Yuni Daily</h1>
+	</div>
+
+
+
+		<nav id="topMenu">
+			<ul>
+				<li><a class="menuLink" href="#"><b>About us</b></a></li>
+				<li><a class="menuLink" href="#"><b>Ministries</b></a></li>
+				<li><a class="menuLink" href="#"><b>Community</b></a></li>
+				<li><a class="menuLink" href="#"><b>Locations</b></a></li>
+				<li><a class="menuLink" href="#"><b>Blog</b></a></li>
+			</ul>
+		</nav>
+
+
+</body>
+</html>

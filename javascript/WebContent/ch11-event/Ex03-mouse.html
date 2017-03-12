@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 
+마우스 이벤트
+click		마우스를 클릭할 때 발생
+dbclick		마우스를 더블클릭할 때 발생
+mousedown	마우스 버튼을 누를 때 발생
+mouseup		마우스 버튼을 뗄 때 발생
+mouseenter	마우스 포인터가 특정요소의 경계외부에서 내부로 이동할 때
+mouseleave	마우스가 요소의 경계내부에서 외부로 이동할때 발생
+mousemove	마우스를 움직일 때 발생
+mouseover	마우스가 요소 안에 들어올 때 발생
+mouseout	마우스가 요소를 벗어날 떄 발생
+
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	var count = 0;
+	
+	$(function(){
+		$('h1').bind('mouseenter mouseleave',function(){
+			count++;
+			$('#result').text(count + '회 발생');
+		});
+	});
+
+</script> 
+<style type="text/css">
+
+h1 {
+	border: 2px;
+	border-style: solid;
+	border-color: red;
+}
+
+</style>
+</head>
+<body>
+
+	<h1>enter &#38; leave 마우스 이벤트 발생 zone</h1>
+	<div>
+		이벤트: <span id="result"></span>
+	</div>
+
+</body>
+</html>

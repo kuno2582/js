@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('button').click(function(){
+			var text = $(this).text();
+			$('input').val(text);
+		});
+	});
+
+</script>
+</head>
+<body>
+
+	<input type="text" size="50" placeholder="Click the button">
+	<div>
+		<button>Over</button>
+		<button>The</button>
+		<button>Rainbow</button>
+	</div>
+	
+
+</body>
+</html>

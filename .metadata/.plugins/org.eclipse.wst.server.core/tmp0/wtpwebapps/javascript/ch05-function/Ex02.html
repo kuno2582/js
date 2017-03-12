@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+익명 함수
+ - 함수명이 없는 함수
+ - 생성된 함수를 변수에 저장해서 사용하게 됩니다.
+ - 자바스크립트에서는 함수도 객체 자료형을 하나로 취급하기 때문입니다.
+ - 함수를 하나의 값처럼 취급하기 때문에 변수에 저장하여 사용하는 것이 가능합니다.
+ 
+익명 함수 생성(function expression)
+ - 함수리터럴(function)로 하나의 함수를 만들고
+  만들어진 함수를 변수에 저장하여 함수를 생성하는 방법입니다.
+ - 중괄호 안에 함수가 처리해야할 코드를 작성해 주게 됩니다.
+ - 생성된 함수를 변수에 저장하여 함수를 만드는 것을 함수표현식이라고도 합니다.
+ - 함수표현식을 사용한 익명함수 생성시에는 끝에 세미콜론(;)을 붙이는 것을 권장합니다.
+
+함수표현식 형식
+var 변수 = function (매개변수){
+	처리해야할 코드들;
+	return 반환값;
+};
+
+함수호출
+함수변수(매개변수에 전달할 값);
+
+ -->
+<script type="text/javascript">
+
+
+	var plusSeven = function() {
+		var num = prompt('더할 숫자를 입력하세요>');
+		document.write(Number(num) + 7 + '<br>');
+	};
+	
+	document.write(typeof(plusSeven));
+	document.write('<br>');
+	
+	document.write(plusSeven);
+	document.write('<br>');
+
+	plusSeven();
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+나이를 입력받아
+공자님께서 하신 말씀을 근거로
+나이를 부르는 문장을 else if로 판단하여 출력하는 프로그램
+
+ -->
+<script type="text/javascript">
+
+	var age = prompt('나이를 입력하세요','');
+	var str='';
+	
+	if(age<15){
+		str+='어림';
+	}else if(age>=15 && age<30){
+		str+='지학';
+	}else if(age>=30 && age<40){
+		str+='이립';
+	}else if(age>=40 && age<50){
+		str+='불혹';
+	}else if(age>=50 && age<60){
+		str+='지천명';
+	}else if(age>=60 && age<70){
+		str+='이순';
+	}else{
+		str+='늙음';
+	}
+	
+	document.write('당신의 나이는 '+str+"에 해당합니다.");
+
+</script>
+</head>
+<body>
+
+	
+
+</body>
+</html>

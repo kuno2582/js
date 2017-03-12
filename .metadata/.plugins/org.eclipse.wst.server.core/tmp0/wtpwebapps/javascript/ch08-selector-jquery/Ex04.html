@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!--
+태그 선택자
+ - HTML페이지안에 있는 태그 이름으로 선택하는 선택자
+ - 태그 이름에 근거하여 특정 태그들만 선택할 때 사용
+ 
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('*').css('color', 'pink');
+		
+		$('h2').css('color', 'blue');
+		
+// 		$('h3').css('color', 'red');
+// 		$('h4').css('color', 'red');
+
+		$('h3, h4').css('color', 'red');
+
+
+		
+	});
+
+
+</script>
+</head>
+<body>
+	<h2>못할 것 같은 일도</h2>
+	<h3>"시작"해 놓으면 이루어진다.</h3>
+	<h4>채근담</h4>
+
+</body>
+</html>

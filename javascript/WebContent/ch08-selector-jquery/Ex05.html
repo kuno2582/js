@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 
+아이디 선택자
+ - HTML페이지안에 특정 ID속성을 가지고 있는 요소를 선택하는 선택자
+ - 앞에 샾(#)을 붙인 다음에 id명을 적어 특정 태그요소를 선택
+ - 문서 내에 존재하는 많은 태그들 중 단 하나를 선택하기 위해서 사용합니다.
+  그렇기 때문에 id를 중복되지 않게 사용해야 합니다.
+ 
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('#start').css({
+			//속성명:값
+			'color':'yellow',
+			'background':'purple'
+		});
+	});
+
+</script>
+</head>
+<body>
+
+	<h3>가장 나답게 인생을 뛰어넘어야 한다.</h3>
+	<h3 id="start">그것이 내삶의 주인으로 사는 법이다.</h3>
+	<h4>센다 타쿠야</h4>
+
+</body>
+</html>

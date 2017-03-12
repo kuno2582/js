@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+지역변수
+ - 함수안에서 var를 사용해서 선언한 변수
+ - 함수가 끝나면 지역변수도 소멸하게 됩니다.
+ - 함수안에서 var를 명시한 변수는 지역변수이기 때문에 함수 종료 후
+ 	메모리에서 소멸됩니다.
+ - 함수 종료 후에 다시 지역변수를 호출하면 오류발생
+ 
+전역변수
+ - 함수밖에서 만들어진 모든 변수
+ - 함수 안에서 var 없이 만들어진 변수
+ - var없이 명시하지 않고(없이) 전역변수 선언하는 것은 권장하지 않습니다.
+ - 함수가 종료된 후에도 메모리에 남아 있습니다.
+ 
+ -->
+<script type="text/javascript">
+	
+	function test1(){
+		
+		var i = 10;
+		
+		document.write(i +'<br>');
+		
+	}
+	
+	test1();
+	
+	//document.write("함수 종료 후: "+i+'<br>');
+
+	var j;
+	function test2(){
+		j = 300;
+		document.write(j + '<br>');
+	}
+	
+	test2();
+	document.write("함수 종료 후: "+j+'<br>');
+	
+	//-----------------------------
+	function test3(){
+		document.write(j + '<br>');
+	}
+	
+	test3();
+
+	//-----------------------------
+	
+	function test4(){
+		m=30;
+		document.write('함수 안에서 호출' + m + '<br>');
+	}
+	test4();
+	
+	document.write('함수 밖에서 호출' + m + '<br>');
+	
+	//--------------------------------
+	n=50;
+	function test5(){
+		document.write(n + '<br>');
+	}
+	test5();
+	//---------------------------------
+	/* p;
+	function test6(){
+		p = 777;
+		document.write(p+'<br>');
+	}
+	test6(); */
+	//--------------------------------
+	
+	q=20;
+	function test7(){
+		q=60;
+		document.write(q+'<br>');
+	}
+	test7();
+</script>
+</head>
+<body>
+
+</body>
+</html>

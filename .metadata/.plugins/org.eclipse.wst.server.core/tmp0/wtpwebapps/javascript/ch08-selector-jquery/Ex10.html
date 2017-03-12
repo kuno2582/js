@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('.item').css('color','orange');
+		
+		$('h1.item').css('background','red');
+		
+		$('h1.item.select').css('background','yellow');
+	});
+		
+</script>
+</head>
+<body>
+
+	<h1 class="item">Header-0</h1>
+	<h1 class="item select">Header-1</h1>
+	<h1 class="item">Header-2</h1>
+	<p class="item">Item-0</p>
+
+</body>
+</html>

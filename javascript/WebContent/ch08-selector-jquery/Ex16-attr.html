@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+.attr(속성명)
+ - 문서객체의 속성 검사할수 있는 함수 (확인)
+ - 속성과 관련된 모든 기능을 수행
+ - 1개의 인자만 입력한다면 속성명으로 된 속성값을 반환해줍니다.
+ - 1개 이상의 속성을 부여하려면 속성명가 속성값을 인자로 전달해 주면 됩니다.
+.attr(속성명, 속성값);
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('input:checked').attr('checked',false);
+		$('input:disabled').attr('disabled',false);
+	});
+
+</script>
+</head>
+<body>
+
+	<input type="checkbox" name="city" value="서울" checked>서울
+	<input type="button" value="확인" disabled>
+
+</body>
+</html>

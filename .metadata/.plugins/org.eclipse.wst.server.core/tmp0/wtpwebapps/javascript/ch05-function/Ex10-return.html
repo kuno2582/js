@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+return;
+ - 반환 및 종료의미
+ - return문을 만나게 되면 현재 함수를 종료하고 호출한 곳으로 이동합니다.
+ - 리턴값은 돌려줄 값 앞에 return키워드를 붙여 표시하면 
+  	함수 호출한 곳으로 리턴값을 되돌려 줍니다.
+ - return문 아래에 있는 코드는 수행되지 않습니다.
+
+ -->
+<script type="text/javascript">
+
+	function returnTest(){
+		document.write('문장 A' + '<br>');
+		return;
+		document.write('문장 B' + '<br>');
+	}
+	
+	var out = returnTest();
+	document.write(out);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

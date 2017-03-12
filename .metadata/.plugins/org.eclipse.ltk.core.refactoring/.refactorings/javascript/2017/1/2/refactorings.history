@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;javascript/WebContent/ch10-DOM-jquery/Ex16.html&apos; to &apos;Ex16-keyUp.html&apos;" description="Rename resource &apos;Ex16.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/ch10-DOM-jquery/Ex16.html" name="Ex16-keyUp.html" stamp="1484299155847" updateReferences="true"/>
+</session>

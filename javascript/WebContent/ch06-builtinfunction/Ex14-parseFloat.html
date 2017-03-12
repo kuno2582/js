@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+parseFloat(문자열)
+ - 문자열을 부동소수점, 즉 실수로 변환해 주는 함수
+ - parseInt()처럼 숫자보다 문자열이 처음에 나오면 
+ 변환이 불가능하여 NaN값이 반환됩니다. 
+
+ -->
+<script type="text/javascript">
+
+	document.write(parseFloat('12')); document.write('<br>');
+	document.write(parseFloat('12.00')); document.write('<br>');
+
+	document.write(parseFloat('12.34')); document.write('<br>');
+
+	document.write(parseFloat('12 34 56')); document.write('<br>');
+	
+	document.write(parseFloat('    77     ')); document.write('<br>');
+
+	document.write(parseFloat('12year')); document.write('<br>');
+	document.write(parseFloat('version 12')); document.write('<br>');
+
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

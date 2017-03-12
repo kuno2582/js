@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+함수의 표준 프로퍼티
+ - 모든 함수들은 부모역할을 하는 프로퍼티 타입의 객체인 
+ Function.prototype객체를 가지고 있습니다.
+
+ -->
+<script type="text/javascript">
+
+	function add(x,y){
+		return x + y;
+	}
+	
+	//console.dir(add);
+	
+	console.dir(add.prototype);
+	
+	document.write(add.prototype.constructor);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+
+switch
+- 여러개의 조건에 따라 여러개의 실행문을 실행해야할 경우 사용 조건문
+- switch문 뒤에 괄호()안의 값과 
+일치하는 값을 가지는 case안의 문장을 실행하는 구문
+
+switch(조건값)
+	case 값:
+		수행구문;
+		break;
+	case 값:
+		수행구문;
+		break;
+	default:
+		수행구문;
+		break;
+ -->
+<script type="text/javascript">
+	var type = prompt('당신의 혈액형을 입력하세요', '');
+	
+	switch(type){
+	
+	case 'A':
+		document.write('A형입니다.');
+		break;
+	case 'B':
+		document.write('B형입니다.');
+		break;
+	case 'AB':
+		document.write('AB형입니다.');
+		break;
+	case 'O':
+		document.write('O형입니다.');
+		break;
+	default:
+		document.write('미남/미녀형 입니다.');
+	
+	}
+
+
+
+</script> 
+ 
+</head>
+<body>
+
+</body>
+</html>

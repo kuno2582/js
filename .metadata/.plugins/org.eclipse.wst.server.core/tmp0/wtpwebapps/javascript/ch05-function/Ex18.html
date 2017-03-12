@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+익명함수 형태의 내부함수
+ -->
+<script type="text/javascript">
+
+	function f(){
+		
+		return function (){
+			document.write("Hello World!");
+		};
+	}
+	
+	var result = f();
+	
+	result();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

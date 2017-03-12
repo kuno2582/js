@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+
+$(요소).html(문자열)
+문서 객체 내부의 글자와 관련된 모든 기능 수행(HTML태그 인식)
+$(요소).html(function(index, html){})
+
+$(요소).text(문자열)
+문서 객체 내부의 글자와 관련된 모든 기능 수행(문자열로만 인식)
+$(요소).text(function(index, html){})
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('div').html('<h1>HaHa</h1>');
+		$('p').text('Positive Thinking');
+	});
+
+</script>
+</head>
+<body>
+
+	<div>가나다</div>
+	<p>라마바</p>
+
+</body>
+</html>

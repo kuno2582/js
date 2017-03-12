@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+이벤트 제거
+.unbind()		bind()된 이벤트 제거
+.die()			live()된 이벤트 제거
+.undelegate()	delegate()된 이벤트 제거
+.preventDefault()	기본 이벤트 제거
+.stopPropagation()	이벤트 전달 제거
+ -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('a').click( function(event){
+			$(this).css('background', 'hotpink');
+			
+			//기본 이벤트 제거
+			event.preventDefault();
+			//기본 이벤트 막기
+			event.stopPropagation();
+		});
+		
+		$('h1').click(function(){
+			$(this).css('background','gold');
+		});
+	});
+
+</script>
+</head>
+<body>
+	<h1>
+		<a href="http://www.google.com">Google</a>
+	</h1>
+</body>
+</html>

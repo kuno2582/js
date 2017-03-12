@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	
+	
+	function parameter(){
+		var result='';
+		
+		var length = arguments.length;
+		
+		if(length==0){
+			result += 'ZERO';
+		}else if(length==1){
+			result += 'ONE';
+		}else if(length==2){
+			result += 'TWO';
+		}else if(length==3){
+			result += 'THREE';
+		}else if(length==4){
+			result += 'FOUR';
+		}else {
+			result += 'MORE';
+		}
+		
+		return result;
+	}
+	
+	var output = parameter();
+	document.write(output);
+	document.write('<br>');
+	
+	output = parameter(1);
+	document.write(output);
+	document.write('<br>');
+	
+	output = parameter(10,20);
+	document.write(output);
+	document.write('<br>');
+	
+	output = parameter(10,20,30);
+	document.write(output);
+	document.write('<br>');
+	
+	output = parameter(10,20,30,40,50);
+	document.write(output);
+	document.write('<br>');
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

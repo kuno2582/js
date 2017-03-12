@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+	window.onload = function(){
+		load();
+	};
+
+	function load(){
+		var text ='';
+		var i,j,d;
+		d=0;
+		var ran;
+		for(j=0;j<26;j++){
+			for(i=0;i<58;i++){
+				text += '<div class='+d+'></div>';
+				d++;
+			}
+			text += '<br>';
+		}
+		document.getElementById('demo').innerHTML = text;
+		
+		setInterval(frame, 10);
+		
+		function frame(){
+			var ran = Math.floor(Math.random()*1508);
+			if($('div.'+ran).css('background-color') == 'rgb(255, 192, 203)'){
+				$('div.'+ran).css('background','white');
+			}else{
+				$('div.'+ran).css('background','pink');
+			}
+		}
+	}
+	
+</script>
+<style type="text/css">
+
+div {
+	width:25px;
+	height:25px;
+	border:1px solid black;
+	display: inline-block;
+	margin:0 1px;
+}
+
+div:hover {
+	background: black;
+}
+
+</style>
+</head>
+<body>
+
+<p id='demo'></p>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;javascript/WebContent/Myweb/NewFile.jsp&apos; to &apos;mysql-prac.jsp&apos;" description="Rename resource &apos;NewFile.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Myweb/NewFile.jsp" name="mysql-prac.jsp" stamp="1483691694763" updateReferences="true"/>
+</session>

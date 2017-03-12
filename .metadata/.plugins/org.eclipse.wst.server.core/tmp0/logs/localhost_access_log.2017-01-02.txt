@@ -1,0 +1,6 @@
+127.0.0.1 - - [02/Jan/2017:13:41:26 +0900] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [02/Jan/2017:13:41:28 +0900] "GET /javascript/Myweb/NewFile.jsp HTTP/1.1" 200 31
+0:0:0:0:0:0:0:1 - - [02/Jan/2017:13:52:39 +0900] "GET /javascript/Myweb/NewFile.jsp HTTP/1.1" 200 85
+0:0:0:0:0:0:0:1 - - [02/Jan/2017:17:04:38 +0900] "GET /Versus/web/main.html HTTP/1.1" 404 991
+0:0:0:0:0:0:0:1 - - [02/Jan/2017:17:04:39 +0900] "GET /Versus/web/main.html HTTP/1.1" 404 991
+0:0:0:0:0:0:0:1 - - [02/Jan/2017:17:04:43 +0900] "GET /Versus/web/info.html HTTP/1.1" 404 991

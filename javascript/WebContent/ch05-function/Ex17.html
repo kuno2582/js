@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 
+내부 함수
+
+함수 스코핑
+ - 함수 내부에서 선언된 변수는 함수 외부에서 접근이 불가능합니다.
+ - 기본적으로 함수 스코프 밖에서는 함수 스코프 안에 선언된 모든 변수나 함수에
+ 	접근이 불가능합니다.
+ -->
+<script type="text/javascript">
+
+	function outter(){
+		
+		var a = 10;
+		var b = 20;
+		
+		function inner() {
+			var b = 30;
+			var c = 40;
+			
+			document.write(a + '<br>');
+			document.write(b + '<br>');
+			document.write(c + '<br>');
+		}
+		inner();
+	}
+	outter();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
